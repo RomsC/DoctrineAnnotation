@@ -14,7 +14,7 @@
 
 ### How to reproduct the issue
 
-1. Go to the module front controller `./module/doctrineannotation/test`
+1. Go to the module front controller `#SHOP_URL#/module/doctrineannotation/test`
 
 ### To fix the issue
 
