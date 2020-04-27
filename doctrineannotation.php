@@ -11,23 +11,6 @@ if (file_exists($autoloadPath)) {
 
 class doctrineannotation extends Module
 {
-    /** @var array */
-    private $_hooks = [
-        'moduleRoutes',
-    ];
-
-    /** @var array */
-    private $_moduleRoutes = [
-        'module-doctrineannotation-index' => [
-            'controller' => 'Test',
-            'rule' => 'doctrineannotation/',
-            'params' => [
-                'fc' => 'module',
-                'module' => 'doctrineannotation',
-            ],
-        ],
-    ];
-
     public function __construct()
     {
         $this->name = 'doctrineannotation';
@@ -125,16 +108,6 @@ class doctrineannotation extends Module
 
         return true;
     }
-
-    /**
-     * @param array $params
-     * @return array
-     */
-    public function hookModuleRoutes(array $params)
-    {
-        return $this->_moduleRoutes;
-    }
-
 
     /**
      * @param string $sql_file
